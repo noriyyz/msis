@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Machado de Assis</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="p-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <h1 class="display-5 fw-bold text-uppercase text-dark">Machado de Assis</h1>
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Botão de acessibilidade -->
+    <div id="acessibilidade" class="menu-acessibilidade">
+        <button id="botao-acessibilidade" class="btn btn-primary fw-bold">♿</button>
+        <div id="opcoes-acessibilidade" class="opcoes-acessibilidade">
+            <button id="aumentar-fonte" class="btn btn-secondary fw-bold">A +</button>
+            <button id="diminuir-fonte" class="btn btn-secondary fw-bold">A -</button>
+            <button id="modo-escuro" class="btn btn-dark fw-bold">🌙</button>
+        </div>
+    </div>
+
+    <!-- Conteúdo principal -->
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo ao universo de...</h1>
+                    <h1 class="display-3 text-white fw-bold">Machado de Assis</h1>
+                    <a href="#machado" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+                <img src="titulo.png" alt="" class="img-fluid img-inicio">
+            </div>
+        </section>
+
+        <section id="machado" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center">
+                <div class="col-4 d-flex justify-content-center">
+                    <img src="macado.png" class="rounded-pill" alt="Imagem de Machado de Assis" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                    <h2>Quem foi Machado de Assis?</h2>
+                    <p>
+                        Machado de Assis (1839–1908) foi um dos maiores escritores da literatura brasileira e um dos fundadores da Academia Brasileira de Letras. 
+                        Considerado o mestre do Realismo no Brasil, escreveu romances, contos, crônicas e peças de teatro.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2 class="text-center pt-5">Livros</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-4"><img src="memorias.png" class="img-fluid rounded-5"></div>
+                    <div class="col-md-4"><img src="Domcasmurro.png" class="img-fluid rounded-5"></div>
+                </div>
+                <div class="row mt-4 justify-content-md-center">
+                    <div class="col-md-4"><img src="quincas.png" class="img-fluid rounded-5"></div>
+                    <div class="col-md-4"><img src="todos.png" class="img-fluid rounded-5"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container p-5 d-flex justify-content-center">
+                <div class="col-md-8 col-lg-10 rounded-5 formulario">
+                    <h2 class="mb-3">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email">
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic">
+        <p class="mt-3">Desenvolvido por Thiago. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
